@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Landing from './Components/Landing/Landing';
+import Menu from './Components/Menu/Menu';
+import FirstSec from './Components/FirstSec/FirstSec';
+import SecondSec from './Components/SecondSec/SecondSec';
+import ThirdSec from './Components/ThirdSec/ThirdSec';
+import Collection from './Components/Collection/Collection';
+import Last from './Components/Last/Last';
+import FiveSec from './Components/FiveSec/FiveSec';
 
-function App() {
+
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Landing/>
+              <div>
+                <Menu />
+                <FirstSec />
+                <SecondSec />
+              </div>
+              <div className='issue'><ThirdSec />
+                </div>
+              <div><Collection/></div>
+              <div><FiveSec/></div>
+              <div><Last/></div>
+            </div>
+          }
+        />
+        <Route path="/haha/*" element={<h1>Not Found</h1>} />
+      </Routes>
+      <div className='toTop'></div>
+    </Router>
   );
-}
+};
 
 export default App;

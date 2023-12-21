@@ -1,0 +1,14 @@
+.tata{
+    padding-top: 300px;
+}
+.tata img{
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+.tata img:hover{
+    opacity: 0.8;
+}
+
+
+

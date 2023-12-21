@@ -1,0 +1,61 @@
+.second-sec {
+    background-color: #f8f5f0;
+    width: 100%;
+    height: 100vh;
+}
+.three img{
+    height: 100vh;
+    width: 90%;
+
+}
+.three{
+    text-align: left;
+}
+.four{
+    text-align: left;
+}
+
+.four p{
+    line-height: 30px;
+    margin-top: 25px;
+}
+.four button{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 11px;
+    letter-spacing: .22em;
+    line-height: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    transition: .7s;
+    margin-top: 30px;
+}
+
+.four button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .three{
+        text-align: center;
+    }
+    
+.four p{
+    padding-left: 20px;
+}
+.four h1{
+    padding-left: 20px;
+}
+.four button{
+    margin-left: 20px;
+}
+  }
+
+
+  ::selection {
+    background-color: #967844;/* Set the background color */
+    color: whitesmoke; /* Set the text color */
+  }

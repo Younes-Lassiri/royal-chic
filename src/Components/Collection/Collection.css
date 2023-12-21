@@ -1,0 +1,241 @@
+.con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f5f0;
+    padding-left: 83px;
+  }
+  
+  
+  .carde {
+    position: relative;
+    width: 273px;
+    height: 337px;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .carde img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  @media screen and (max-width: 1300px) {
+    .carde{
+        margin: 15px auto;
+    }
+    .con{
+        padding-left: 0;
+    }
+  }
+
+
+  ::selection {
+    background-color: #967844;/* Set the background color */
+    color: whitesmoke; /* Set the text color */
+  }
+  
+  .carde::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: opacity 0.2s ease-in;
+    z-index: 200;
+  }
+  
+  .carde:hover::before {
+    opacity: 0.9;
+  }
+  
+
+  .carde .price{
+    position: absolute;
+    left: 37px;
+    bottom: 60px;
+    color: gray;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    display: none;
+    z-index: 1000;
+    transition: 0.2s ease-in;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .carde{
+      width: 90%;
+      height: 85vh;
+    }
+  }
+
+  
+
+
+
+
+
+
+
+  .carde .name{
+    position: absolute;
+    left: 37px;
+    bottom: 30px;
+    display: none;
+    z-index: 1000;
+    transition: 0.2s ease-in;
+    
+  }
+
+  .carde .name a{
+    text-decoration: none;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    transition: .2s;
+  }
+  .carde .name a:hover{
+    color: #967844;
+  }
+
+  .carde:hover .price{
+    display: block;
+  }
+  .carde:hover .name{
+    display: block;
+  }
+
+  .carde .new{
+    background-color: #967844;
+    color: white;
+    width: 73px;
+    height: 18px;
+    display: grid;
+    font-size: 0.7rem;
+    place-content: center;
+    letter-spacing: 3px;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    transition: .5s;
+  }
+
+  .carde:hover .new{
+    display: none;
+  }
+
+  .carde .promo{
+    background-color: #967844;
+    color: white;
+    width: 73px;
+    height: 18px;
+    display: grid;
+    font-size: 0.7rem;
+    place-content: center;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    transition: .5s;
+  }
+
+  .carde:hover .promo{
+    display: none;
+  }
+
+
+  .carde .oldPrice{
+    position: absolute;
+    left: 75px;
+    bottom: 60px;
+    font-family: 'EB Garamond', serif;
+    color: gray;
+    font-size: 1rem;
+    display: none;
+    z-index: 1000;
+    transition: 0.2s ease-in;
+    text-decoration: line-through;
+  }
+
+
+  .carde:hover .oldPrice{
+    display: block;
+  }
+
+
+
+  .carde .sold{
+    background-color: rgb(19, 19, 19);
+    color: rgba(255, 255, 255, 0.774);
+    width: 73px;
+    height: 18px;
+    display: grid;
+    font-size: 0.7rem;
+    place-content: center;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    transition: .5s;
+  }
+
+  .carde:hover .sold{
+    display: none;
+  }
+
+
+.headingOne{
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.headingOne .con-title{
+  float: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #928c81;
+  font-size: 11px;
+  line-height: 1.63em;
+  letter-spacing: .16em;
+}
+
+
+.con-description {
+  font-size: 45px;
+  line-height: 1.2em;
+  color: #2e2e2d;
+  font-weight: 400;
+  font-family: "EB Garamond",serif;
+  padding-top: 33px;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+
+
+@media (max-width: 768px) {
+  .con-description {
+    font-size: 30px;
+  }
+  .all{
+    padding-left: 16px;
+  }
+  .headingOne{
+    padding-top: 90px;
+    padding-bottom: 30px;
+
+  }
+}
+
