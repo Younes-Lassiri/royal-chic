@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/royal-chic/static/css/main.92a37950.css",
+    "main.js": "/royal-chic/static/js/main.66f29509.js",
+    "static/media/mainBackground.jpg": "/royal-chic/static/media/mainBackground.8e09ec511b6a54270ceb.jpg",
+    "static/media/h1-img-2.jpg": "/royal-chic/static/media/h1-img-2.5accc428f4303ae31571.jpg",
+    "static/media/h1-video-img-1.jpg": "/royal-chic/static/media/h1-video-img-1.6d311590e82831b55534.jpg",
+    "static/media/h1-img-3.jpg": "/royal-chic/static/media/h1-img-3.82eb1a975ec86e196c11.jpg",
+    "static/media/first.jpg": "/royal-chic/static/media/first.76c8325b95d807f56ef8.jpg",
+    "static/media/h1-img-4.jpg": "/royal-chic/static/media/h1-img-4.ad6a8550ea37c61a6d69.jpg",
+    "index.html": "/royal-chic/index.html",
+    "main.92a37950.css.map": "/royal-chic/static/css/main.92a37950.css.map",
+    "main.66f29509.js.map": "/royal-chic/static/js/main.66f29509.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92a37950.css",
+    "static/js/main.66f29509.js"
+  ]
+}
